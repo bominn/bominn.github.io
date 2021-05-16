@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Chrome, Firefox OS and Opera Status Bar Color -->
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:title" content="netron 好用的模型可視化工具">
+    <meta name="description" content="深度學習的框架越來越多，從最多人用的 Tensorflow, Pytorch, 已經被併入 Tenserflow 的 Keras, 或是工業部署會用到的 Tensorflow lite 等等，當你今天拿到一個模型，想要知道模型架構是如何設計，使用可視化工具是一種方便且簡單的方式。">
+  <meta property="og:description" content="深度學習的框架越來越多，從最多人用的 Tensorflow, Pytorch, 已經被併入 Tenserflow 的 Keras, 或是工業部署會用到的 Tensorflow lite 等等，當你今天拿到一個模型，想要知道模型架構是如何設計，使用可視化工具是一種方便且簡單的方式。">
+    <meta property="og:type" content="blog">
+  <title>netron 好用的模型可視化工具</title>
+  <!-- Favicon -->
+    <link rel="shortcut icon" href="📖">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <style>
+    :root {
+      font-size: 18px;
+    }
+
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+    <a href="index.html">
+      <div class="Navbar__Btn"><span>📖</span> <span>Home</span></div>
+    </a>
+                                    <span class="Navbar__Delim">&centerdot;</span>
+    <a href="about.html">
+      <div class="Navbar__Btn"><span>😀</span> <span>About</span></div>
+    </a>
+                  </nav>
+  <header class="Header">
+          <div class="Header__Spacer Header__Spacer--NoCover">
+    </div>
+        <h1 class="Header__Title">netron 好用的模型可視化工具</h1>
+            <div class="DateTagBar">
+                <span class="DateTagBar__Item DateTagBar__Date">Posted on Wed, May 5, 2021</span>
+                          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--undefined">
+            <a href="tag/deep learning.html">deep learning</a>
+          </span>
+                <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--undefined">
+            <a href="tag/visualization.html">visualization</a>
+          </span>
+                <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--undefined">
+            <a href="tag/tensorflow.html">tensorflow</a>
+          </span>
+                <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--undefined">
+            <a href="tag/pytorch.html">pytorch</a>
+          </span>
+                  </div>
+          </header>
+      <article id="https://www.notion.so/59f3929857a34cec84544f6573ec8ab4" class="PageRoot"><div id="https://www.notion.so/61cfb2025a4b4c5697a4928c88144a80" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Last update </span><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Date">@2021/03/05</span></span><span class="SemanticString"> </span></span></p></div><div id="https://www.notion.so/9eba384f4a0b4c14b16ddb37409f5e21" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h1 id="https://www.notion.so/4120c92a91944cd4bebbe0553ee84476" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/4120c92a91944cd4bebbe0553ee84476"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">深度學習模型可視化</span></span></h1><div id="https://www.notion.so/23acdb00be994859acd5e85312c6e2d7" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">深度學習的框架越來越多，從最多人用的 Tensorflow, Pytorch, 已經被併入 Tenserflow 的 Keras, 或是工業部署會用到的 Tensorflow lite 等等，當你今天拿到一個模型，想要知道模型架構是如何設計，使用可視化工具是一種方便且簡單的方式。</span></span></p></div><div id="https://www.notion.so/4eba032dc660430887d39c1340e46119" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">然而，不同的框架對模型可視化的支援度不一樣，因此 </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/lutzroeder/netron">netron</a></span><span class="SemanticString"> 的出現可以省去許多麻煩。自從我去公司上班後才發現這個好用的工具，真是相見恨晚啊~</span></span></p></div><div id="https://www.notion.so/d38ed617366b41c3befdd5c53be98db9" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h1 id="https://www.notion.so/981f5c0a03264af1995c96cdb8c3ad1f" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/981f5c0a03264af1995c96cdb8c3ad1f"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">netron 簡介</span></span></h1><div id="https://www.notion.so/9ddde4cfd2694b55a61c3d0b72611bfc" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">netron 的 github 頁面列出了所有支援的模型檔案，真的是林林總總，學都學不完啊，如果每次拿到一個新框架的模型，為了看懂模型架構而從頭開始學習，實在是太浪費時間了。netron 就可以幫助你快速的理解模型架構，netron對不同框架的支援度不太一樣，有些已經非常完整，有些可能會有一點小問題，大家可以自行嘗試。</span></span></p></div><div id="https://www.notion.so/1db039907b5e4044ae299e6750293c72" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">netron 可以安裝在 macOS, Windows, Linux, 也可以直接使用網頁板，非常的方便，我平常使用時都直接用網頁版的。netron 的操作非常直觀，滑鼠滾輪放大縮小，按住左鍵可以上下移動。</span></span></p></div><h1 id="https://www.notion.so/8d5641b693014c7dad3a57ffd481033e" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/8d5641b693014c7dad3a57ffd481033e"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">netron 可視化結果</span></span></h1><div id="https://www.notion.so/5cfd7bd9ba7b4c29bd03878da10e8508" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">netron 的 github 已經提供許多範例了，這邊放個比較不一樣的: tensorflow lite 的 quantize model，quantize(量化) 可以有效減少模型大小，是部署深度學習模型常用的方法。這邊從 tensorflow hub 下載的</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://tfhub.dev/tensorflow/lite-model/mobilenet_v1_0.25_128_quantized/1/default/1"> mobilenet_v1_0.25_128_quantized</a></span><span class="SemanticString"> ，用 netron 來看看模型的架構和參數。</span></span></p></div><div id="https://www.notion.so/7e335504cce44255bab397bb4f27b186" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">下圖是選取第一個 Conv2D 的結果，可以看到 netron 把 Conv2D 的參數，input, weight, bias, 和 output 全都包了，提供了許多有用的資訊。比如說這個模型的輸入是大小 128 * 128 的彩色圖片，第一個 Conv2D 的 bias 實際的數值是多少等等。有關 quantize 的參數若想知道可以在底下告訴我。</span></span></p></div><div id="https://www.notion.so/fcf546045f8d48a1870d8035d2251e44" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffe9ca4ff-ecd9-4cde-a0ba-bd1cb303a52e%2Fnetron_example.png?width=825&amp;table=block&amp;id=fcf54604-5f8d-48a1-870d-8035d2251e44"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffe9ca4ff-ecd9-4cde-a0ba-bd1cb303a52e%2Fnetron_example.png?width=825&amp;table=block&amp;id=fcf54604-5f8d-48a1-870d-8035d2251e44" style="width:100%"/></a><figcaption><span class="SemanticStringArray"><span class="SemanticString">                                                                            </span><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">netron 視覺化範例</strong></span></span></figcaption></figure></div><div id="https://www.notion.so/ee95e3b7c8384dc0a27d81dbca2b770b" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h1 id="https://www.notion.so/0d502f106a1a47bb96c9d05df9cf632b" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--1"><a class="Anchor" href="#https://www.notion.so/0d502f106a1a47bb96c9d05df9cf632b"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Pytorch 呢，怎麼畫出來這麼奇怪</span></span></h1><div id="https://www.notion.so/2fe17904599b4974b9ee6d14e8123da8" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">很可惜，如果你今天只有 pytorch 的 model weight 檔 (.pth) ，是沒有辦法知道模型是怎麼相連的，這是因為 pytorch 動態圖的設計，只有在 forward 的時候會知道模型的圖是怎麼相連的。一個治標不知本的方法是將 pytorch model 變成編譯好的靜態圖 TorchScript (官網教學)，再用 netron 得到視覺化的結果，但我建議有看懂 pytorch forward 的能力是非常重要的，想學習 pytorch 是必經之路。</span></span></p></div></article>  <footer class="Footer">
+        <div>&copy; Bomin's home 2019</div>
+        <div>&centerdot;</div>
+        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+            rel="noopener noreferrer">Notablog</a>.
+        </div>
+    </footer>
+</body>
+
+</html>
